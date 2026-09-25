@@ -1,0 +1,89 @@
+{
+  "selected_model": "tfidf_word_svc",
+  "holdout": {
+    "accuracy": 0.9575057736720555,
+    "macro_f1": 0.95695256741671,
+    "weighted_f1": 0.957546264205448,
+    "error_rate": 0.04249422632794453,
+    "n": 2165,
+    "n_incorrect": 92
+  },
+  "cv_mean_accuracy": 0.9573762246121866,
+  "cv_std_accuracy": 0.007102907476321525,
+  "chrono": {
+    "accuracy": 0.9508196721311475,
+    "macro_f1": 0.9492611802563987,
+    "n": 2135,
+    "n_incorrect": 105
+  },
+  "comparison": [
+    {
+      "model": "majority",
+      "accuracy": 0.2891,
+      "macro_f1": 0.0641,
+      "weighted_f1": 0.1297,
+      "error_rate": 0.7109,
+      "n_incorrect": 1539,
+      "notes": "Always predict most common canonical team"
+    },
+    {
+      "model": "keyword_rules",
+      "accuracy": 0.7607,
+      "macro_f1": 0.7498,
+      "weighted_f1": 0.7477,
+      "error_rate": 0.2393,
+      "n_incorrect": 518,
+      "notes": "Priority keyword rules; baseline only"
+    },
+    {
+      "model": "tfidf_word_lr",
+      "accuracy": 0.9404,
+      "macro_f1": 0.9399,
+      "weighted_f1": 0.9405,
+      "error_rate": 0.0596,
+      "n_incorrect": 129,
+      "notes": "Word TF-IDF (1-2g) + Logistic Regression"
+    },
+    {
+      "model": "tfidf_word_svc",
+      "accuracy": 0.9575,
+      "macro_f1": 0.957,
+      "weighted_f1": 0.9575,
+      "error_rate": 0.0425,
+      "n_incorrect": 92,
+      "notes": "Word TF-IDF (1-2g) + LinearSVC"
+    },
+    {
+      "model": "tfidf_word_char_svc",
+      "accuracy": 0.957,
+      "macro_f1": 0.9553,
+      "weighted_f1": 0.9571,
+      "error_rate": 0.043,
+      "n_incorrect": 93,
+      "notes": "Word + char TF-IDF + LinearSVC"
+    },
+    {
+      "model": "word_char_struct_svc",
+      "accuracy": 0.9533,
+      "macro_f1": 0.9519,
+      "weighted_f1": 0.9534,
+      "error_rate": 0.0467,
+      "n_incorrect": 101,
+      "notes": "Word+char TF-IDF, product/channel/warranty, keyword flags + LinearSVC"
+    },
+    {
+      "model": "word_char_struct_svc_balanced",
+      "accuracy": 0.951,
+      "macro_f1": 0.9497,
+      "weighted_f1": 0.9511,
+      "error_rate": 0.049,
+      "n_incorrect": 106,
+      "notes": "Same features with class_weight=balanced"
+    }
+  ],
+  "n_train_full": 10822,
+  "n_holdout_train": 8657,
+  "n_holdout_val": 2165,
+  "n_chrono_train": 8687,
+  "n_chrono_val": 2135
+}
