@@ -1,0 +1,57 @@
+# Secrets and local env
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Temporary
+*.tmp
+*.log
+tmp/
+temp/
+
+# Client data — do not publish
+train.csv
+test_unlabelled.csv
+resolution_log.csv
+teams.csv
+ops-policy.pdf
+email-thread.txt
+email-thread.txt.txt
+README.txt
+sample_submission.csv
