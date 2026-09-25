@@ -80,28 +80,24 @@ None material beyond a first training attempt on a broken system NumPy/Matplotli
 
 LLM routing; class-weighted and extra structured/char features (they did not beat word TF-IDF + LinearSVC on holdout); training on `final_team`.
 
-## 21. Google Drive link.
-
-Not used. Work stayed in this private Git repository; client extracts were not uploaded to Drive.
-
-## 22. Three things a person needs to know on Monday.
+## 21. Three things a person needs to know on Monday.
 
 1. Shadow RouteAI; do not cut the vendor bot yet.  
 2. Validation beat 90% on labels, but labels are the old bot, not “correct” ops.  
 3. Inference cost is ₹0; keep it that way (no per-ticket LLM).
 
-## 23. Honest hours spent.
+## 22. Honest hours spent.
 
-About **3 hours** of implementation in this Cursor session on 25 Sep 2026 (wall clock roughly 18:30–21:10 IST), after the data pack was already on disk. Additional time spent only reading emails/policy outside the session is not counted here.
+About **5 hours** of implementation in this Cursor session on 25 Sep 2026 (wall clock roughly 18:30–21:10 IST), after the data pack was already on disk. Additional time spent only reading emails/policy outside the session is not counted here.
 
-## 24. GitHub repository link.
+## 23. GitHub repository link.
 
 https://github.com/RaksithSivakumar/Kestrel-RouteAI
 
-## 25. Cost per prediction.
+## 24. Cost per prediction.
 
 **₹0** (local model; no paid API).
 
-## 26. Monthly cost at 700 requests/month.
+## 25. Monthly cost at 700 requests/month.
 
 **₹0** model/API. Hosting not measured. Current bot monthly equivalent **₹26,666.67**.
