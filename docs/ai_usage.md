@@ -35,4 +35,4 @@ Honest record for this engagement.
 
 ## What a reviewer should still check
 
-Human review of `memo_to_ritu.md`, `submission-form.md` hours/links, and GitHub/Drive URLs (left as `[TO BE FILLED]` where the author must supply them).
+Human review of hours remains advisable. GitHub URL is the real `origin` remote. Google Drive was not used.

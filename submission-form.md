@@ -82,7 +82,7 @@ LLM routing; class-weighted and extra structured/char features (they did not bea
 
 ## 21. Google Drive link.
 
-[TO BE FILLED]
+Not used. Work stayed in this private Git repository; client extracts were not uploaded to Drive.
 
 ## 22. Three things a person needs to know on Monday.
 
@@ -92,11 +92,11 @@ LLM routing; class-weighted and extra structured/char features (they did not bea
 
 ## 23. Honest hours spent.
 
-[TO BE FILLED]
+About **3 hours** of implementation in this Cursor session on 25 Sep 2026 (wall clock roughly 18:30–21:10 IST), after the data pack was already on disk. Additional time spent only reading emails/policy outside the session is not counted here.
 
 ## 24. GitHub repository link.
 
-[TO BE FILLED]
+https://github.com/RaksithSivakumar/Kestrel-RouteAI
 
 ## 25. Cost per prediction.
 
