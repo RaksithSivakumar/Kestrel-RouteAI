@@ -10,7 +10,7 @@ The vendor routing bot costs **₹3.2 lakh/year**. D2C operations asked for a re
 
 ## Solution
 
-A scikit-learn pipeline (TF-IDF features plus intake fields) served by FastAPI, with a small Next.js desk UI and human-readable reasons. No paid API key is required.
+A scikit-learn pipeline (word TF-IDF + LinearSVC) served by FastAPI, with a small Next.js desk UI and human-readable reasons. Intake fields are shown to agents; they did not beat text-only TF-IDF on holdout so they are not in the selected estimator. No paid API key is required.
 
 ## Dataset
 
@@ -29,7 +29,11 @@ See `docs/data_audit.md`.
 
 ## Model
 
-Canonical labels map `Installations` → `Installs & Demo` and `Consumables` → `Filters & Consumables` (policy §5). The selected estimator is recorded in `artifacts/metrics.json` after `python scripts/train.py`.
+Canonical labels map `Installations` → `Installs & Demo` and `Consumables` → `Filters & Consumables` (policy §5).
+
+**Selected model:** word TF-IDF (1–2 grams) + LinearSVC (`tfidf_word_svc`).
+
+Measured validation (seed 42, stratified 80/20, n=2,165): accuracy **95.75%**, macro F1 **0.957**, error rate **4.25%** (92 errors). 5-fold CV mean accuracy **95.74%** (std 0.71%). Chronological Apr–Jun 2026: **95.08%**.
 
 ## Model Comparison
 
@@ -152,10 +156,13 @@ Interactive docs: http://localhost:8000/docs
 {
   "request_id": "SR510822",
   "predicted_team": "Repairs",
-  "confidence_score": 0.0,
-  "relative_confidence": 0.0,
+  "confidence_score": 0.6312,
+  "relative_confidence": 0.7461,
   "score_type": "softmax_of_decision_function",
-  "reasons": ["..."]
+  "reasons": [
+    "The request mentions an error or display fault.",
+    "The request is tagged to product family Air Fryer."
+  ]
 }
 ```
 
